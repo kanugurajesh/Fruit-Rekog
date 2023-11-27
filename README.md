@@ -53,3 +53,37 @@ An intelligent application for accurately classifying fruits using TensorFlow Li
 
 ![fruit-icon](https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/44d91638-a17f-49a8-90dc-0592d2e412ea)
 
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/exploringengin1)
+
+## Tech Stack
+
+- Kotlin
+- XML
+- Android Studio
+- Tensorflow
+- Tensorflow Lite
+
+## Authors
+
+- [@kanugurajesh](https://www.github.com/kanugurajesh)
+- [@rajesh604](https://www.github.com/rajesh604)
+
+## Contributing
+
+Contributions are always welcome!
+
+See [`contributing.md`](https://github.com/kanugurajesh/Cric-Quiz/blob/main/contributing.md) for ways to get started.
+
+Please adhere to this project's [`code of conduct`](https://github.com/kanugurajesh/Cric-Quiz/blob/main/code_of_conduct.md).
+
+## Support
+
+For support, you can buy me a coffee
+
+<a href="https://www.buymeacoffee.com/kanugurajen" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+## License
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/kanugurajesh/Cric-Quiz/blob/master/LICENSE.TXT)
