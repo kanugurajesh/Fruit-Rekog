@@ -81,7 +81,6 @@ class MainActivity : AppCompatActivity() {
           var maxPos = 0;
           var maxConfidence = 0;
 
-           Toast.makeText(this, confidences, Toast.LENGTH_SHORT).show()
 
 //           get the confidences length
               val confidencesLength = outputFeature0.floatArray.size
@@ -92,8 +91,6 @@ class MainActivity : AppCompatActivity() {
                         maxPos = i
                     }
                 }
-
-           Toast.makeText(this, maxPos.toString(), Toast.LENGTH_SHORT).show()
 
            classify.text = "Predicted Fruit is: " + getFruitName(maxPos)
            model.close()
