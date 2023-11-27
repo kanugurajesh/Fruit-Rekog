@@ -47,4 +47,9 @@ An intelligent application for accurately classifying fruits using TensorFlow Li
 
 ## Application Demo
 
+![fruit-recognizer](https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/507d263d-eed5-4547-a711-bc5098e69183)
+
+## Application Screenshot
+
+![fruit-icon](https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/44d91638-a17f-49a8-90dc-0592d2e412ea)
 
