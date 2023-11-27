@@ -28,6 +28,7 @@ An intelligent application for accurately classifying fruits using TensorFlow Li
 
 ## Getting Started:
 
-1. **Clone the Repository:**
+1. **Fork the Repository:**
    ```bash
-   git clone https://github.com/your-username/fruit-classifier.git
+   Fork the repository which will create a copy of this project in your github
+   ```
