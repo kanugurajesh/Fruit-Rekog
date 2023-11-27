@@ -84,9 +84,9 @@ An intelligent application for accurately classifying fruits using TensorFlow Li
 
 Contributions are always welcome!
 
-See [`contributing.md`](https://github.com/kanugurajesh/Cric-Quiz/blob/main/contributing.md) for ways to get started.
+See [`contributing.md`](https://github.com/kanugurajesh/Fruit-Rekog/blob/main/contributing.md) for ways to get started.
 
-Please adhere to this project's [`code of conduct`](https://github.com/kanugurajesh/Cric-Quiz/blob/main/code_of_conduct.md).
+Please adhere to this project's [`code of conduct`](https://github.com/kanugurajesh/Fruit-Rekog/blob/main/code_of_conduct.md).
 
 ## Support
 
