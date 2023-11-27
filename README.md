@@ -32,3 +32,18 @@ An intelligent application for accurately classifying fruits using TensorFlow Li
    ```bash
    Fork the repository which will create a copy of this project in your github
    ```
+2. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/user-name/Fruit-Rekog.git
+   ```
+3. **Open the Fruit-Rekog Folder with Android-Studio:**
+   ```bash
+   Go to android studio and open the Fruit-Rekog folder
+   ```
+4. **Make your own changes:**
+   ```bash
+   Brainstorm and make your own changes in the app
+   ```
+
+
+
