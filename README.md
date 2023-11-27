@@ -51,7 +51,16 @@ An intelligent application for accurately classifying fruits using TensorFlow Li
 
 ## Application Screenshot
 
-![fruit-icon](https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/44d91638-a17f-49a8-90dc-0592d2e412ea)
+<div gap="5px">
+   <img src="https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/44d91638-a17f-49a8-90dc-0592d2e412ea" alt="" width="300" height="500">
+
+   <img src="https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/dfc8c218-7a3e-4f77-a604-186279580e11" alt="" width="300" height="500">
+   
+   <img src="https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/d685cdc3-c5cd-481c-98bf-fc6cc22827cd" alt="" width="300" height="500">
+   
+   <img src="https://github.com/kanugurajesh/Fruit-Rekog/assets/120458029/b387f559-dcc4-467e-8268-67aed9665265" alt="" width="300" height="500">
+
+</div>
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://rajeshportfolio.me/)
