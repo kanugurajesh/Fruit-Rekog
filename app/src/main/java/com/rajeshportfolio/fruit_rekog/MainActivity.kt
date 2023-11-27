@@ -12,10 +12,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.rajeshportfolio.fruit_rekog.ml.Model
-import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
+import kotlin.math.max
 
 class MainActivity : AppCompatActivity() {
 
@@ -67,19 +67,36 @@ class MainActivity : AppCompatActivity() {
                 for (i in 0 until imageSize) {
                     for (j in 0 until imageSize) {
                         val `val` = intValues[pixel++]
-                        byteBuffer.putFloat((`val` shr 16 and 0xFF) / 255f)
-                        byteBuffer.putFloat((`val` shr 8 and 0xFF) / 255f)
-                        byteBuffer.putFloat((`val` and 0xFF) / 255f)
+                        byteBuffer.putFloat((`val` shr 16 and 0xFF) / 1f)
+                        byteBuffer.putFloat((`val` shr 8 and 0xFF) / 1f)
+                        byteBuffer.putFloat((`val` and 0xFF) / 1f)
                     }
                 }
 
               inputFeature0.loadBuffer(byteBuffer)
 
-              val outputs = model.process(inputFeature0)
-                val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-                val max = getMax(outputFeature0.floatArray)
-                classify.text = "Predicted Fruit is: " + getFruitName(max)
-                model.close()
+          val outputs = model.process(inputFeature0)
+          val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+          val confidences = outputFeature0.floatArray.contentToString()
+          var maxPos = 0;
+          var maxConfidence = 0;
+
+           Toast.makeText(this, confidences, Toast.LENGTH_SHORT).show()
+
+//           get the confidences length
+              val confidencesLength = outputFeature0.floatArray.size
+//           loop through the confidences
+                for (i in 0 until confidencesLength) {
+                    if (outputFeature0.floatArray[i] > maxConfidence) {
+                        maxConfidence = outputFeature0.floatArray[i].toInt()
+                        maxPos = i
+                    }
+                }
+
+           Toast.makeText(this, maxPos.toString(), Toast.LENGTH_SHORT).show()
+
+           classify.text = "Predicted Fruit is: " + getFruitName(maxPos)
+           model.close()
             } catch (e: Exception) {
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
             }
@@ -89,11 +106,7 @@ class MainActivity : AppCompatActivity() {
         return when (max) {
             0 -> "Apple"
             1 -> "Banana"
-            2 -> "Grape"
-            3 -> "Orange"
-            4 -> "Pineapple"
-            5 -> "Strawberry"
-            6 -> "Watermelon"
+            2 -> "orange"
             else -> "Not Found"
         }
     }
